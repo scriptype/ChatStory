@@ -3,7 +3,7 @@ var Messages = {
       shortestMessage: null
     },
     wordList = ["a", "e"],
-    $statsTemplate = Handlebars.compile($("#stat_template").html()),
+    $statsTemplate = setTemplate("#stat_template"),
     $container = $("#messages")
   
 function showStats () {
