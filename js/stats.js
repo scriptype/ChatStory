@@ -1,11 +1,10 @@
-var
-  Messages = {
-    longestMessage : null,
-    shortestMessage: null
-  },
-  wordList = ["a", "e"],
-  $statsTemplate = Handlebars.compile($("#stat_template").html()),
-  $container = $("#messages")
+var Messages = {
+      longestMessage : null,
+      shortestMessage: null
+    },
+    wordList = ["a", "e"],
+    $statsTemplate = Handlebars.compile($("#stat_template").html()),
+    $container = $("#messages")
   
 function showStats () {
   $statsButton.addClass("act")
