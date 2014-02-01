@@ -80,10 +80,9 @@ Message.filterByWord = function (term) {
     
   for (i; i < data.length; i++) {
     if (data[i]["entry"]) {
-      var
-        _msg = data[i],
-        _cont = _msg["entry"],
-        _wordFound = _cont.match(word);
+      var _msg = data[i],
+          _cont = _msg["entry"],
+          _wordFound = _cont.match(word)
         
       if (_wordFound && _wordFound.length > wordCount) {
         wordCount = _wordFound.length
