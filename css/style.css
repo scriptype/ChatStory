@@ -1,0 +1,223 @@
+/*
+  Author: Memleketsiz Apaçi
+  v(-2): 16.01.2014 - 06:06
+  v(-1): 17.01.2014 - 09:04
+  v0   : 19.01.2014 - 16:57
+*/
+
+body {
+  font: 100  14px/22px Courier;
+  background: #333 url(../img/bg.png)
+}
+
+div#outer {
+  width: 640px;
+  margin: 0 auto
+} 
+
+div#sidebar, #inner {
+  padding-top: 20px
+}
+
+div#sidebar {
+  width: 140px;
+  float: left
+}
+
+div#sidebar input, input + i#x {
+  height: 30px;
+  margin-bottom: 20px;
+  border: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #aaa;
+  line-height: 28px;
+  font-family: sans-serif;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.1)
+}
+
+div#sidebar input {
+  width: 140px;
+  outline: none;
+  border-radius: 15px;
+  font-size: 12px;
+  background: rgba(0,0,0,0.2);
+  padding-left: 10px;
+  transition: background .3s;
+  -webkit-transition: background .3s;
+}
+
+div#sidebar input:focus {
+  background: rgba(0,0,0,0.4)
+}
+
+div#sidebar input.search {
+  width: 110px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+input + i#x {
+  display: none;
+  position: relative;
+  top: -1px;
+  margin-bottom: -1px;
+  width: 30px;
+  cursor: pointer;
+  font-size: 8px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-left: 10px;
+  background: rgba(0,0,0,0.4);
+}
+
+input + i#x:hover {
+  background: rgba(255,10,40,0.1)
+}
+
+input.search + i#x {
+  display: inline-block
+}
+
+.pointer {
+  cursor: pointer
+}
+
+a#stats, a#update, ul li {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  background: rgba(0,0,0,0.1);
+  color: #aaa;
+  text-align: center;
+  padding: 5px 0;
+  transition: background .3s, box-shadow .3s, color .3s;
+  -webkit-transition: background .3s, box-shadow .3s, color .3s;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+  font-size: 12px
+}
+
+a#stats {
+  display: block;
+}
+
+a#stats:hover, a#stats.act, a#update.found:hover {
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.4)
+}
+
+a#stats.act {
+  background: rgba(10,255,40,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.01);
+  border-top: 1px solid rgba(0,0,0,0.3);
+  color: #ddd
+}
+
+a#update {
+  display: none;
+  text-decoration: none;
+  color: #ddd;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4)
+}
+
+a#stats, a#update {
+  margin-bottom: 5px
+}
+
+ul li:hover {
+  background: rgba(255,10,40,0.1)
+}
+
+ul li.history {
+  background: rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+ul li.current {
+  background: rgba(10,40,255,0.1);
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: #ddd
+}
+
+div#inner {
+  width: 480px;
+  float: right
+}
+
+p, div.stat {
+  background: rgba(0,0,0,0.4);
+  border-radius: 7px;
+  color: #aaa;
+  border-top: 1px solid rgba(255,255,255,0.24);
+  border-bottom: 1px solid rgba(255,255,255,0.19);
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.1);
+  transition: background .3s;
+  -webkit-transition: background .3s
+}
+
+p:hover, div.stat:hover {
+  background: rgba(0,0,0,0.55)
+}
+
+p {
+  margin-bottom: 20px
+}
+
+span, div.stat h3, div.stat h4, div.stat div {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+span.persona {
+  font-weight: bold;
+  display: block;
+  padding-bottom: 30px;
+  color: #fff
+}
+
+span.date, div.stat h2 {
+  background: rgba(255,255,255,0.16);
+  color: #999;
+  display: block;
+  margin-bottom: 20px;
+  padding-bottom: 1px;
+  font-size: 11px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  white-space: nowrap;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1)
+}
+
+span.date {
+  text-align: right
+}
+
+span.msg {
+  display: block;
+  margin-top: -30px;
+  padding-bottom: 30px;
+  white-space: pre-line
+}
+
+span.msg, div.stat div:last-of-type {
+  box-shadow: inset 0 -10px 10px rgba(0,0,0,0.2);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px
+}
+
+div.stat {
+  margin-bottom: 40px
+}
+
+div.stat h2 {
+  text-align: center
+}
+
+div.stat div:first-of-type {
+  padding-top: 30px
+}
+
+div.stat div:last-of-type {
+  padding-bottom: 30px
+}
