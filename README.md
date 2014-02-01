@@ -1,4 +1,4 @@
 ChatStory
 =========
 
-Interface for JSON formatted chat history
+Interface for JSON formatted chat history.
