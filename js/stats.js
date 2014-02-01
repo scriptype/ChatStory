@@ -32,12 +32,11 @@ function Message (options) {
 }
 
 Message.filterByLength = function (longest) {
-  var
-    i = 0,
-    msgLength = longest ? 0 : 9999,
-    msg = null,
-    dateText = "",
-    author = ""
+  var i = 0,
+      msgLength = longest ? 0 : 9999,
+      msg = null,
+      dateText = "",
+      author = ""
     
   for (i; i < data.length; i++) {
     if (data[i]["entry"]) {
@@ -72,13 +71,12 @@ Message.filterByLength = function (longest) {
 }
 
 Message.filterByWord = function (term) {
-  var
-    i = 0,
-    wordCount = 0,
-    msg = null,
-    word = RegExp(term, "gi"),
-    dateText = "",
-    author = ""
+  var i = 0,
+      wordCount = 0,
+      msg = null,
+      word = RegExp(term, "gi"),
+      dateText = "",
+      author = ""
     
   for (i; i < data.length; i++) {
     if (data[i]["entry"]) {
