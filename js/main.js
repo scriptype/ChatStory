@@ -9,7 +9,7 @@ createNavigation()
 checkForUpdates()
 
 var $li           = $navigation.find("li"),
-    $initial      = $li.eq(0)
+    $initial      = $li.eq(0),
     activeString  = $initial.data("string")
     
 $initial.addClass("current history")
